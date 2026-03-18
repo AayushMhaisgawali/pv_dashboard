@@ -1,0 +1,10 @@
+{
+  "name": "solar-pv-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local and Vercel-ready solar PV telemetry dashboard",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
