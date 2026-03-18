@@ -42,6 +42,11 @@ button {
   cursor: pointer;
 }
 
+code {
+  font-family: Consolas, monospace;
+  color: #f9f300;
+}
+
 .dashboard-shell {
   width: min(1240px, calc(100% - 36px));
   margin: 20px auto 28px;
@@ -186,7 +191,7 @@ button {
 .info-row {
   margin-top: 28px;
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1.15fr 1fr;
   gap: 20px;
 }
 
@@ -238,6 +243,7 @@ button {
   font-weight: 600;
 }
 
+.endpoint-form,
 .demo-form {
   margin-top: 16px;
   display: grid;
@@ -245,6 +251,7 @@ button {
   gap: 12px;
 }
 
+.endpoint-form label,
 .demo-form label {
   display: flex;
   flex-direction: column;
@@ -253,6 +260,12 @@ button {
   color: rgba(255, 255, 255, 0.82);
 }
 
+.full-width,
+.demo-form .full {
+  grid-column: 1 / -1;
+}
+
+.endpoint-form input,
 .demo-form input {
   min-height: 44px;
   border-radius: 12px;
@@ -262,6 +275,7 @@ button {
   padding: 0 12px;
 }
 
+.endpoint-form button,
 .demo-form button {
   min-height: 44px;
   border: none;
@@ -269,10 +283,6 @@ button {
   background: linear-gradient(100deg, #f9f300, #d8ef06);
   color: #101010;
   font-weight: 700;
-}
-
-.demo-form .full {
-  grid-column: 1 / -1;
 }
 
 .footer-note {
@@ -314,6 +324,7 @@ button {
     padding: 22px 18px;
   }
 
+  .endpoint-form,
   .demo-form,
   .meta-grid {
     grid-template-columns: 1fr;
